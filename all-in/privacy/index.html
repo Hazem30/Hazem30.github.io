@@ -23,7 +23,7 @@
 
 <article lang="en" dir="ltr">
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective 30 October 2026 · Updated 1 November 2026: ad partners Unity Ads and Liftoff</p>
+  <p class="meta">Effective 30 October 2026 · Updated 2 November 2026: public typing, moderation and deletion recovery</p>
 
   <p>This policy explains what information <strong>ALL IN: Confidently Wrong</strong> (“ALL IN”, “the game”) collects, why, how long it is kept and the choices you have. ALL IN is operated by <strong>Hazem Elghonimy</strong>, an independent developer based in the Kingdom of Saudi Arabia (“we”, “us”). We are responsible for your personal data in the game.</p>
   <p>The short version: you can play without giving us your name or email. We keep what the game needs to run matches fairly and safely, delete player-written text quickly, show ads through Google AdMob, and process purchases through Apple. We do not sell your personal data.</p>
@@ -33,7 +33,7 @@
     <li><strong>Player ID.</strong> When you first play online, the game creates an anonymous account with a random player ID. It is not linked to your name, phone number or email.</li>
     <li><strong>Linked sign-in (optional).</strong> If you choose to link Sign in with Apple or Google so your purchases follow you to other devices, we receive an account identifier from that provider and, if you share it, your email address (Apple lets you hide it behind a relay address). We do not receive your password.</li>
     <li><strong>Gameplay.</strong> Matches you play: your seat, chosen character, bids, answers, scores, the questions you have been dealt (so you are not shown the same ones too often), the room or queue you joined, and timestamps. Seat names are preset (for example “Player 2”); you do not enter a name.</li>
-    <li><strong>Text you write.</strong> In private rooms where typed bluffs are switched on, the fake answers you type (up to 60 characters). They are checked automatically for links, contact details and blocked words before other players see them.</li>
+    <li><strong>Text you write.</strong> Where typing is enabled in public or private matches, the fake answers you type (up to 60 Unicode characters). They are checked for links, contact details and blocked words before other players see them. Public typed text is additionally screened by OpenAI; only the submitted text is sent, without your player ID, match ID, the question’s truth or other players’ sealed actions.</li>
     <li><strong>Safety records.</strong> Players you block, reports you file or that are filed about something you wrote, and any temporary typing pause on your account.</li>
     <li><strong>Purchases.</strong> Which in-app purchases your account owns (for example ad removal). Payment is handled by Apple; we never receive your card or bank details.</li>
     <li><strong>Support requests.</strong> If you contact us through the support form: your email address, topic, message, language and, if you provide it, your player ID.</li>
@@ -60,19 +60,22 @@
     <li><strong>Unity Ads</strong> (Unity Technologies) and <strong>Liftoff Monetize</strong> (Liftoff Mobile): ad networks that compete through AdMob to fill ads. See the <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">Unity Ads privacy policy</a> and the <a href="https://liftoff.io/privacy-policy/" rel="noopener">Liftoff privacy policy</a>.</li>
     <li><strong>Apple</strong>: in-app purchase payments and, if you choose it, Sign in with Apple.</li>
     <li><strong>RevenueCat</strong>: verifies purchases and keeps a record of what your anonymous player ID owns.</li>
+    <li><strong>OpenAI</strong>: screens submitted public bluff text for harmful content. We do not send player identities or use a text-generation model for this. See <a href="https://developers.openai.com/api/docs/guides/your-data" rel="noopener">OpenAI’s API data controls</a>.</li>
     <li><strong>Google (Gmail)</strong>: delivers support requests to our inbox.</li>
   </ul>
-  <p>Other players see what the game shows in a match: your preset seat name, character, bids once revealed, scores and the answers you wrote after the reveal. We may disclose information if required by law or to protect players’ safety. We do not sell your personal data for money.</p>
+  <p>Other players see what the game shows in a match: your preset seat name, character, bids once revealed, scores and your answers among the neutral candidates before reveal, with authorship shown only at reveal. We may disclose information if required by law or to protect players’ safety. We do not sell your personal data for money.</p>
 
   <h2>4. How long we keep it</h2>
   <div class="table"><table>
     <tr><th>Information</th><th>Kept for</th></tr>
-    <tr><td>Typed bluffs</td><td>Removed 24 hours after the match ends</td></tr>
+    <tr><td>Typed bluffs</td><td>Scheduled for removal 24 hours after the match ends; delayed or failed jobs are retried automatically</td></tr>
     <tr><td>Reported text (evidence)</td><td>30 days after the report, then removed; the report record without the text is kept to handle repeat abuse</td></tr>
     <tr><td>Match records</td><td>Deleted 30 days after the match ends</td></tr>
     <tr><td>Matchmaking searches</td><td>Deleted after one day</td></tr>
     <tr><td>Support requests</td><td>Deleted one year after they arrive</td></tr>
     <tr><td>Player ID, purchases, blocks, questions seen</td><td>Until you delete your account</td></tr>
+    <tr><td>Deletion recovery</td><td>Failed account and RevenueCat cleanup is retried until complete. A one-way hashed deletion receipt without the raw player ID is retained to prevent late events recreating account data.</td></tr>
+    <tr><td>Moderation decisions</td><td>Scheduled for deletion after 24 hours; hashed request identifiers and allow/reject/unavailable results, without raw bluff text</td></tr>
     <tr><td>Abuse counters</td><td>Only counts and times, no content; overwritten as each limit window ends</td></tr>
   </table></div>
 
@@ -104,7 +107,7 @@
 
 <article lang="ar" dir="rtl">
   <h1>سياسة الخصوصية</h1>
-  <p class="meta">تاريخ السريان: 30 أكتوبر 2026 · تحديث 1 نوفمبر 2026: شريكا الإعلانات Unity Ads وLiftoff</p>
+  <p class="meta">تاريخ السريان: 30 أكتوبر 2026 · تحديث 2 نوفمبر 2026: الكتابة العامة وفحص النص واستكمال الحذف</p>
 
   <p>توضح هذه السياسة المعلومات التي تجمعها لعبة <strong>ALL IN: Confidently Wrong</strong> («ALL IN» أو «اللعبة»)، وسبب جمعها، ومدة الاحتفاظ بها، والخيارات المتاحة لك. يشغّل اللعبة <strong>حازم الغنيمي</strong>، مطوّر مستقل مقيم في المملكة العربية السعودية («نحن»)، وهو المسؤول عن بياناتك الشخصية في اللعبة.</p>
   <p>باختصار: يمكنك اللعب دون أن تعطينا اسمك أو بريدك الإلكتروني. نحتفظ بما تحتاجه اللعبة لإدارة المباريات بعدل وأمان، ونحذف النصوص التي يكتبها اللاعبون بسرعة، ونعرض الإعلانات عبر Google AdMob، وتتم المشتريات عبر Apple. لا نبيع بياناتك الشخصية.</p>
@@ -114,7 +117,7 @@
     <li><strong>معرّف اللاعب.</strong> عند أول لعب عبر الإنترنت تنشئ اللعبة حسابًا مجهول الهوية بمعرّف عشوائي، غير مرتبط باسمك أو رقم هاتفك أو بريدك الإلكتروني.</li>
     <li><strong>ربط تسجيل الدخول (اختياري).</strong> إذا اخترت ربط حسابك بـ Apple أو Google لتنتقل مشترياتك معك إلى أجهزة أخرى، نتلقى معرّف الحساب من تلك الجهة، وبريدك الإلكتروني إن اخترت مشاركته (تتيح Apple إخفاءه خلف عنوان وسيط). لا نتلقى كلمة مرورك.</li>
     <li><strong>بيانات اللعب.</strong> المباريات التي تلعبها: مقعدك، والشخصية التي اخترتها، ومراهناتك، وإجاباتك، ونقاطك، والأسئلة التي ظهرت لك (حتى لا تتكرر عليك كثيرًا)، والغرفة أو قائمة الانتظار التي انضممت إليها، والأوقات. أسماء المقاعد محددة مسبقًا (مثل «اللاعب 2») ولا تُدخل اسمًا.</li>
-    <li><strong>النصوص التي تكتبها.</strong> في الغرف الخاصة التي تُفعَّل فيها الخدع المكتوبة: الإجابات المزيفة التي تكتبها (حتى 60 حرفًا). تُفحص تلقائيًا بحثًا عن الروابط وبيانات التواصل والكلمات المحظورة قبل أن يراها اللاعبون الآخرون.</li>
+    <li><strong>النصوص التي تكتبها.</strong> عند تفعيل الكتابة في المباريات العامة أو الخاصة: الإجابات المزيفة التي تكتبها (حتى 60 حرف Unicode). تُفحص بحثًا عن الروابط وبيانات التواصل والكلمات المحظورة قبل عرضها. يُفحص التمويه العام أيضًا عبر OpenAI؛ ولا يُرسل إلا النص المقدم دون معرّف اللاعب أو المباراة أو حقيقة السؤال أو إجراءات اللاعبين السرية.</li>
     <li><strong>سجلات الأمان.</strong> اللاعبون الذين تحظرهم، والبلاغات التي تقدّمها أو التي تُقدَّم بشأن ما كتبته، وأي إيقاف مؤقت للكتابة في حسابك.</li>
     <li><strong>المشتريات.</strong> ما يملكه حسابك من مشتريات داخل اللعبة (مثل إزالة الإعلانات). تتولى Apple الدفع، ولا نتلقى أبدًا بيانات بطاقتك أو حسابك البنكي.</li>
     <li><strong>طلبات الدعم.</strong> إذا تواصلت معنا عبر نموذج الدعم: بريدك الإلكتروني، والموضوع، والرسالة، واللغة، ومعرّف اللاعب إن قدّمته.</li>
@@ -141,19 +144,22 @@
     <li><strong>Unity Ads</strong> (Unity Technologies) و<strong>Liftoff Monetize</strong> (Liftoff Mobile): شبكتان إعلانيتان تتنافسان عبر AdMob لعرض الإعلانات. اطّلع على <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">سياسة خصوصية Unity Ads</a> و<a href="https://liftoff.io/privacy-policy/" rel="noopener">سياسة خصوصية Liftoff</a>.</li>
     <li><strong>Apple</strong>: مدفوعات الشراء داخل اللعبة، وتسجيل الدخول عبر Apple إن اخترته.</li>
     <li><strong>RevenueCat</strong>: تتحقق من المشتريات وتحتفظ بسجل لما يملكه معرّف اللاعب المجهول.</li>
+    <li><strong>OpenAI</strong>: فحص نص التمويه العام بحثًا عن المحتوى الضار. لا نرسل هويات اللاعبين ولا نستخدم نموذجًا لتوليد النص لهذا الغرض. اطّلع على <a href="https://developers.openai.com/api/docs/guides/your-data" rel="noopener">ضوابط بيانات OpenAI API</a>.</li>
     <li><strong>Google (Gmail)</strong>: توصيل طلبات الدعم إلى بريدنا.</li>
   </ul>
-  <p>يرى اللاعبون الآخرون ما تعرضه اللعبة في المباراة: اسم مقعدك المحدد مسبقًا، وشخصيتك، ومراهناتك بعد كشفها، ونقاطك، والإجابات التي كتبتها بعد كشف النتيجة. قد نفصح عن معلومات إذا اقتضى النظام ذلك أو لحماية سلامة اللاعبين. لا نبيع بياناتك الشخصية مقابل المال.</p>
+  <p>يرى اللاعبون الآخرون ما تعرضه اللعبة في المباراة: اسم مقعدك المحدد مسبقًا، وشخصيتك، ومراهناتك بعد كشفها، ونقاطك، وإجاباتك ضمن الخيارات المحايدة قبل الكشف، ولا تُكشف هوية الكاتب إلا عند كشف النتيجة. قد نفصح عن معلومات إذا اقتضى النظام ذلك أو لحماية سلامة اللاعبين. لا نبيع بياناتك الشخصية مقابل المال.</p>
 
   <h2>4. مدة الاحتفاظ</h2>
   <div class="table"><table>
     <tr><th>المعلومات</th><th>مدة الاحتفاظ</th></tr>
-    <tr><td>الخدع المكتوبة</td><td>تُزال بعد 24 ساعة من انتهاء المباراة</td></tr>
+    <tr><td>الخدع المكتوبة</td><td>تُجدول إزالتها بعد 24 ساعة من انتهاء المباراة، وتُعاد تلقائيًا المهام المتأخرة أو المتعثرة</td></tr>
     <tr><td>النص المُبلَّغ عنه (الدليل)</td><td>30 يومًا من البلاغ ثم يُزال؛ ويُحتفظ بسجل البلاغ دون النص للتعامل مع الإساءة المتكررة</td></tr>
     <tr><td>سجلات المباريات</td><td>تُحذف بعد 30 يومًا من انتهاء المباراة</td></tr>
     <tr><td>عمليات البحث عن لاعبين</td><td>تُحذف بعد يوم واحد</td></tr>
     <tr><td>طلبات الدعم</td><td>تُحذف بعد سنة من وصولها</td></tr>
     <tr><td>معرّف اللاعب، والمشتريات، والحظر، والأسئلة التي ظهرت لك</td><td>حتى تحذف حسابك</td></tr>
+    <tr><td>استكمال الحذف</td><td>تُعاد محاولات حذف الحساب وبيانات RevenueCat المتعثرة حتى اكتمالها. يُحتفظ بإيصال حذف مجزّأ أحادي الاتجاه دون معرّف اللاعب الأصلي لمنع الأحداث المتأخرة من إعادة إنشاء بياناته.</td></tr>
+    <tr><td>نتائج فحص النص</td><td>تُجدول إزالتها بعد 24 ساعة؛ معرّفات طلبات مجزّأة ونتائج قبول أو رفض أو تعذر، دون نص التمويه الأصلي.</td></tr>
     <tr><td>عدّادات منع الإساءة</td><td>أعداد وأوقات فقط دون أي محتوى، وتُستبدل بانتهاء كل فترة</td></tr>
   </table></div>
 
